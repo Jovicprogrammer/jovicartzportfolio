@@ -65,7 +65,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFFFFF; /* cor do "thumb" (laranja Tailwind) */
+  background: #F6E6D7; /* cor do "thumb" (laranja Tailwind) */
   border-radius: 10px;
 }
 

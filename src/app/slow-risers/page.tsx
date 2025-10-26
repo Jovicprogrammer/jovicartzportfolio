@@ -9,6 +9,7 @@ import HomeNav from "@/components/pagina-home/home-nav"
 
 
 import { Metadata } from "next";
+import VoltarVesquicio from "@/components/Slow-Risers/Voltar-Vesquicio"
 
 export const metadata: Metadata = {
   title: "Slow Risers",
@@ -21,6 +22,8 @@ export default function HomeSlowRisers() {
     return (
 
         <div className="bg-green-900">
+
+        <VoltarVesquicio/>
 
        <div className="flex items-center justify-center h-screen ">
         <p>
