@@ -18,6 +18,13 @@
   --color-dourado:#FFEFAF;
   --color-leitebranco:#FFFFFF;
   --color-cafepreto:#000000;
+
+  --color-vapid: #0A747B;
+  --color-feisty: #ADE280;
+  --color-underdog: #284374;
+  --color-vanished: #071B3D;
+  --color-wanderlust: #EBF2F2;
+
 }
 
 @media (prefers-color-scheme: dark) {

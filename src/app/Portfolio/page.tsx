@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import { Oskon } from '../fonts';
 
 // Tipos
 interface Product {
@@ -275,13 +276,13 @@ export default function Portfolio() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <div className="min-h-screen bg-cafecomleite p-8">
+    <div className={`min-h-screen bg-cafecomleite p-8 ${Oskon.className}`}>
 
       <Navbar />
 
       <div className="max-w-7xl mx-auto pt-20">
-        <h1 className="text-4xl font-bold text-leitebranco mb-2 text-center">
-          Loja de Produtos
+        <h1 className="text-4xl text-leitebranco mb-2 text-center">
+          meu portfolio.
         </h1>
         <p className="text-leitebranco text-center mb-8">
           Clique nos cards para ver detalhes e imagens em alta qualidade

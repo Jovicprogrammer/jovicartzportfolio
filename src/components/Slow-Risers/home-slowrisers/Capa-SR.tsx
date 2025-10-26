@@ -1,13 +1,13 @@
 import Image from "next/image"
 import { DreamOrphans, Oskon } from "@/app/fonts"
 
-export default function Capa() {
+export default function CapaSR() {
 
     return (
 
-        <div className="flex flex-col items-center justify-center bg-cafecomleite h-screen pt-20">
+        <div className="flex flex-col items-center justify-center h-screen pt-20">
 
-        <h1 className={`text-6xl ${Oskon.className}`}>Vesquicio lhe dá boas vindas!!</h1>
+        <h1 className={`text-6xl ${DreamOrphans.className}`}>Vesquicio lhe dá boas vindas!!</h1>
 
         <Image src='/images/cover.gif' width={900} height={900} alt="Capa do site Vesquicio" className="w-110 pt-10">
         </Image>

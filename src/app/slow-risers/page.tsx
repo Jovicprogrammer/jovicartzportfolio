@@ -10,6 +10,14 @@ import HomeNav from "@/components/pagina-home/home-nav"
 
 import { Metadata } from "next";
 import VoltarVesquicio from "@/components/Slow-Risers/Voltar-Vesquicio"
+import { Dream_Orphans_Light, DreamOrphans } from "../fonts"
+import NavbarSR from "@/components/Navbar-SR"
+import FooterSR from "@/components/Footer-SR"
+import CapaSR from "@/components/Slow-Risers/home-slowrisers/Capa-SR"
+import HookPersonagens from "@/components/Slow-Risers/home-slowrisers/Hook-Personagens"
+import PlaylistSR from "@/components/Slow-Risers/home-slowrisers/Playlist-SR"
+import SobreSR from "@/components/Slow-Risers/home-slowrisers/Sobre-SR"
+import HomeNavSR from "@/components/Slow-Risers/home-slowrisers/HomeNavSR"
 
 export const metadata: Metadata = {
   title: "Slow Risers",
@@ -21,16 +29,31 @@ export default function HomeSlowRisers() {
 
     return (
 
-        <div className="bg-green-900">
+        <div className="bg-gradient-to-b bg-vapid to-vanished ">
 
         <VoltarVesquicio/>
 
-       <div className="flex items-center justify-center h-screen ">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptate cumque cum commodi nisi delectus nihil minus, dolorum possimus eius perferendis molestiae quisquam impedit quasi sapiente iste molestias. Aspernatur, culpa.
-        </p>
-       </div>
+        <NavbarSR/>
 
+        <div id="topo-sr">
+          <CapaSR/>
+        </div>
+
+        <div id="sobre-sr">
+        <SobreSR/>
+        </div>
+
+        <div id="hook-sr">
+        <HookPersonagens/>
+        </div>
+
+        <div id="playlist-sr">
+        <PlaylistSR/>
+        </div>
+
+        <HomeNavSR/>
+
+        <FooterSR />
 
         </div>
 

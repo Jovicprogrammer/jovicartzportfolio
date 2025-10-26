@@ -1,20 +1,24 @@
 // tailwind.config.js
+
+import { DreamOrphans, ElementaryGothic, Oskon } from "@/app/fonts";
+
 const config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",       // ajuste esses caminhos pro seu projeto!
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+theme: {
     extend: {
-      colors: {
-        babado: "#FF80AB",
-        luxo: "#4B0082",
-        sombra: "#1E1E2F",
+      fontFamily: {
+        dream: ['var(--font-dream)'],
+        gothic: ['var(--font-gothic)'],
+        oskons: ['var(--font-oskon)'],
+        lightdream: ['var(--font-lightdream)'],
       },
     },
   },
-  darkMode: "class", // se quiser dark mode
+  plugins: [],
 };
 
 export default config;

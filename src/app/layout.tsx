@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
+import { DreamOrphans, Dream_Orphans_Light, ElementaryGothic, Oskon } from './fonts';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={minhaFonte.className}
+        className={`${Oskon.variable} ${DreamOrphans.variable} ${ElementaryGothic.variable} ${Dream_Orphans_Light.variable}`}
       >
         {children}
       </body>
