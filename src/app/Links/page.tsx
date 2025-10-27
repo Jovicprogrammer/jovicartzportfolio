@@ -25,7 +25,7 @@ export default function LinksPage() {
             <a href="https://www.youtube.com/@vesquicio" target="blank" className="hover:text-dourado transition">Youtube</a>
             <a href="https://www.instagram.com/vesquicio?igsh=NzJ5MWFqNmZ1czhr" target="blank" className="hover:text-dourado transition">Instagram</a>
             <a href="https://github.com/Jovicprogrammer" target="blank" className="hover:text-dourado">Github</a>
-            <a href="https://x.com/vesquicio" target="blank" className="hover:text-dourado transition">Twitter/X</a>
+            {/* <a href="https://x.com/vesquicio" target="blank" className="hover:text-dourado transition">Twitter/X</a> */}
             <a href="https://letterboxd.com/joviczzz/" target="blank" className="hover:text-dourado transition">Letterboxd</a>
             <a href="https://www.last.fm/pt/user/VICT0664" target="blank" className="hover:text-dourado transition">Lastfm</a>
             <a href="https://www.albumoftheyear.org/user/vesquicio/" target="blank" className="hover:text-dourado transition">AOTY</a>
