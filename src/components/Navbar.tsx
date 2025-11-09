@@ -15,7 +15,7 @@ export default function Navbar() {
                 <a href="/Links" className="hover:underline transition mr-65">Links</a>
                 <Image className="absolute w-27 hover:animate-spin" src="/images/vesquicioprint.webp" alt="sd" width={500} height={500} ></Image>
                 <a href="/Portfolio" className="hover:underline transition">Portfolio</a>
-                <Link href="/Slow-Risers">
+                <Link href="/slow-risers">
                     <Image src="/images/SlowRisersLogo.webp" className="absolute top-2 w-25 right-40 hover:w-40 hover:right-30 hover:top-1 transition hover:rotate-5 " width={500} height={500} alt="dsd"></Image>
                 </Link>
             </div>

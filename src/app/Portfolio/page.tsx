@@ -13,8 +13,8 @@ interface Product {
   title: string;
   thumbnail: string;
   description: string;
-  price: string;
   images: string[];
+  infos: string[];
 }
 
 interface ProductCardProps {
@@ -31,46 +31,63 @@ interface ProductModalProps {
 const products: Product[] = [
   {
     id: 1,
-    title: "Monster High Doll",
-    thumbnail: "images/vesquicio-quadro.webp",
-    description: "Boneca colecionável Monster High com detalhes incríveis e acessórios exclusivos. Perfeita para colecionadores!",
-    price: "R$ 299,90",
+    title: "Gilliard - Edição Comemorativa de 45 anos",
+    thumbnail: "images/gilliard/vinil.png",
+    description: "Em comemoração ao aniversário de 45 anos (em 2026) do álbum 'Gilliard', do cantor de sertanejo e brega de mesmo nome, me desafiei a criar uma identidade visual que celebra esse álbum numa roupagem mais moderna. Seria como uma campanha onde uma versão comemorativa e remasterizada do disco seria lançada, junto com diversos produtos inspirados no álbum. ",
     images: [
-      "images/vesquicio-quadro.webp",
-      "images/vesquicio-quadro.webp",
-      "images/vesquicio-quadro.webp",
-      "images/vesquicio-quadro.webp",
-    ]
+      "images/gilliard/capa.png",
+      "images/gilliard/contracapa.png",
+      "images/gilliard/logo.png",
+      "images/gilliard/poster.png",
+      "images/gilliard/vinil.png",
+      "images/gilliard/camisa.png",
+      "images/gilliard/hoodie.png",
+      "images/gilliard/caneca.png",
+      "images/gilliard/caderno.png",
+      "images/gilliard/banner.png"
+    ],
+    infos:[
+      "1. capa",
+      "2. contracapa",
+      "3. logo + paleta de cores",
+      "4. Poster",
+      "5. Disco de vinil",
+      "6. Camisa",
+      "7. Hoodie",
+      "8. Caneca",
+      "9. Caderno",
+      "10. Banner",
+    ],
   },
   {
     id: 2,
     title: "Caderno Be Berry",
     thumbnail: "images/vesquicio-quadro.webp",
     description: "Caderno universitário 10 matérias com capa dura decorada, bolsa plástica com aroma de morango e 160 folhas.",
-    price: "R$ 49,90",
     images: [
       "images/vesquicio-quadro.webp",
-    ]
+    ],
+    infos:[],
   },
   {
     id: 3,
     title: "Action Figure Hero",
     thumbnail: "images/vesquicio-quadro.webp",
     description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
-    price: "R$ 189,90",
     images: [
       "images/vesquicio-quadro.webp",
-    ]
+    ],
+    infos:[],
   },
   {
     id: 4,
     title: "Strangers on a Train - 2 pack",
     thumbnail: "images/vesquicio-quadro.webp",
     description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
-    price: "R$ 189,90",
     images: [
       "images/vesquicio-quadro.webp",
-    ]
+    ],
+    infos:[],
   },
 ];
 
@@ -92,7 +109,6 @@ function ProjectCard({ product, onClick }: ProductCardProps) {
       </div>
       <div className="p-4">
         <h3 className="font-bold text-lg text-gray-800 mb-2">{product.title}</h3>
-        <p className="text-2xl font-bold text-cafe">{product.price}</p>
       </div>
     </div>
   );
@@ -199,33 +215,22 @@ function ProductModal({ product, onClose }: ProductModalProps) {
             {/* Informações do Produto */}
             <div>
               <div className="mb-6">
-                <p className="text-4xl font-bold text-cafe mb-4">
-                  {product.price}
-                </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-[25px] text-white leading-relaxed">
                   {product.description}
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <button className="w-full bg-cafe text-white font-bold py-4 rounded-lg hover:from-dourado hover:to-cafe transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer">
-                  Adicionar ao Carrinho
-                </button>
-                <button className="w-full border-2 border-cafe text-cafe font-bold py-4 rounded-lg hover:bg-purple-50 transition-all duration-200">
-                  Comprar Agora
-                </button>
-              </div>
 
-              {/* Detalhes extras */}
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h3 className="font-bold text-gray-800 mb-3">Detalhes do Produto</h3>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>✓ Frete grátis para todo Brasil</li>
-                  <li>✓ Entrega em até 7 dias úteis</li>
-                  <li>✓ Garantia de 30 dias</li>
-                  <li>✓ Produto 100% original</li>
-                </ul>
-              </div>
+              {/* listagem */}
+        <div className="mt-6 pt-6 border-t border-gray-200">
+          <h3 className="font-bold text-black mb-3">Conteúdo</h3>
+          <ul className="space-y-2 text-white/80">
+            {product.infos.map((info, index) => (
+            <li key={index}>✓ {info}</li>
+            ))}
+          </ul>
+        </div>
+
             </div>
           </div>
         </div>
@@ -239,7 +244,7 @@ function ProductModal({ product, onClose }: ProductModalProps) {
         >
           <button
             onClick={() => setZoomedImage(null)}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 cursor-pointer transition-colors"
             aria-label="Fechar zoom"
           >
             <X className="w-8 h-8" />
