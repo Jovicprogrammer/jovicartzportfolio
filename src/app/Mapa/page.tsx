@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import NavbarSR from '@/components/Navbar-SR';
 import { ElementaryGothic } from '../fonts';
+import VoltarVesquicio from '@/components/Slow-Risers/Voltar-Vesquicio';
 
 // Tipos
 interface Location {
@@ -328,6 +329,7 @@ export default function InteractiveMap() {
       <div className="max-w-7xl mx-auto">
 
         <NavbarSR/>
+        <VoltarVesquicio/>
         
         {/* Header */}
         <div className="text-center mb-8">

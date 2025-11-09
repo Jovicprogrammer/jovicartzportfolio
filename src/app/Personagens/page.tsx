@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { X, Heart } from 'lucide-react';
 import NavbarSR from '@/components/Navbar-SR';
 import { ElementaryGothic } from '../fonts';
+import VoltarVesquicio from '@/components/Slow-Risers/Voltar-Vesquicio';
 
 // Tipos
 interface FunFact {
@@ -137,7 +138,7 @@ function CharacterModal({ character, onClose }: CharacterModalProps) {
 
   return (
     <div className="fixed inset-0 bg-vanished/80 bg-opacity-80 z-[600] flex items-center justify-center animate-fadeIn">
-      <div className="bg-feisty rounded-3xl max-w-5xl w-full max-h-[100vh] overflow-hidden shadow-2xl animate-scaleIn p-7 pl-1">
+      <div className="bg-feisty rounded-3xl max-w-5xl w-full h-[95vh] overflow-hidden shadow-2xl animate-scaleIn p-7 pl-1">
         
         {/* Header */}
         {/* <div className="flex absolute items-center justify-between p-5 bg-feisty"> */}
@@ -150,19 +151,19 @@ function CharacterModal({ character, onClose }: CharacterModalProps) {
           </div> */}
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-vanished transition-colors bg-wanderlust rounded-full p-2 shadow-lg hover:shadow-xl cursor-pointer absolute right-40 top-3"
+            className="text-gray-500 hover:text-vanished transition-colors bg-wanderlust rounded-full p-2 shadow-lg hover:shadow-xl cursor-pointer relative left-240 bottom-3"
             aria-label="Fechar modal"
           >
-            <X className="w-8 h-8" />
+            <X className="w-7 h-7" />
           </button>
         {/* </div> */}
 
         {/* Conteúdo */}
-        <div className="grid md:grid-cols-2 gap-20 overflow-y-auto max-h-[calc(100vh-100px)]">
+        <div className="grid md:grid-cols-2 gap-20 overflow-y-auto h-[90vh]">
           
           {/* Imagem do personagem (corpo inteiro) */}
           <div className="flex items-center justify-center">
-            <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl bg-wanderlust">
+            <div className="relative bottom-11 w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl bg-wanderlust">
               <Image
                 src={character.fullBody}
                 alt={`${character.name} - corpo inteiro`}
@@ -205,11 +206,11 @@ function CharacterModal({ character, onClose }: CharacterModalProps) {
                     {/* Card do Fun Fact */}
                     <div className=" text-vapid p-4 rounded-xl cursor-pointer hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                       <div className="flex items-center justify-between">
-                        <span className="font-semibold flex items-center gap-2">
+                        <span className="font-semibold flex items-center gap-1">
                           {fact.icon && <span className="text-xl">{fact.icon}</span>}
                           {fact.label}
                         </span>
-                        <span className="text-2xl">❓</span>
+                        <span className="">❓</span>
                       </div>
                     </div>
 
@@ -264,6 +265,8 @@ export default function CharacterGallery() {
     <div className="min-h-screen bg-gradient-to-b bg-vapid to-vanished p-8">
 
       <NavbarSR/>
+
+      <VoltarVesquicio/>
 
       <div className="max-w-7xl mx-auto">
         
