@@ -114,7 +114,7 @@ const locations: Location[] = [
     pinColor: "bg-cyan-400"
   },
 ];
-
+  
 // Componente do Pin no mapa
 function MapMarker({ location, onClick }: { location: Location; onClick: () => void }) {
   return (
