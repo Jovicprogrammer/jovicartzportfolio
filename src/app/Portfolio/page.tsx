@@ -2,7 +2,7 @@ import PortfolioComponent from "@/components/PortfolioComponent";
 import { Metadata } from "next";
 
   export const metadata: Metadata = {
-    title: "portfolio de vesquicio.",
+    title: "portfólio de vesquicio.",
     description: "Página com links importantes (e outros nem tanto)",
   };
 
