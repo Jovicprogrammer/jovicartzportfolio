@@ -1,12 +1,10 @@
 import React from "react"
-import Link from "next/link"
 import Image from "next/image"
-import { ElementaryGothic, Oskon } from "@/app/fonts"
 export default function NavbarSR() {
 
     return (
 
-        <nav className={`fixed top-8 z-[500] left-0 right-0 mx-auto max-w-5xl bg-wanderlust border-4 border-feisty flex flex-col sm:flex-row gap-2 items-center px-2 justify-center p-2 rounded ${ElementaryGothic.className} font-extralight shadow-md shadow-feisty/50`}>
+        <nav className={`fixed top-8 z-[500] left-0 right-0 mx-auto max-w-5xl bg-wanderlust border-4 border-feisty flex flex-col sm:flex-row gap-2 items-center px-2 justify-center p-2 rounded font-extralight shadow-md shadow-feisty/50`}>
 
             <div className="flex gap-6 items-center justify-center h-auto text-underdog font-bold">
                 <a href="/slow-risers" className="hover:bg-feisty transition ml-10">Home</a>

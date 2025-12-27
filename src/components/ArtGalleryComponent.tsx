@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Oskon } from "../app/fonts";
 import Navbar from '@/components/Navbar';
-import Footer from '@/app/Portfolio/page';
 
 
 interface Artwork {

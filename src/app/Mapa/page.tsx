@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import NavbarSR from '@/components/Navbar-SR';
-import { ElementaryGothic } from '../fonts';
 import VoltarVesquicio from '@/components/Slow-Risers/Voltar-Vesquicio';
 
 // Tipos
@@ -333,7 +332,7 @@ export default function InteractiveMap() {
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className={`text-5xl font-bold text-feisty pb-7 pt-25 ${ElementaryGothic.className}`}>
+          <h2 className={`text-5xl font-bold text-feisty pb-7 pt-25`}>
           Conheça Drollhaven
           </h2>
         </div>

@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "next/link"
 import Image from "next/image"
 import { Oskon } from "@/app/fonts"
 export default function Navbar() {

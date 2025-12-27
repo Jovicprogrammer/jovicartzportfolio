@@ -2,9 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { X, Heart } from 'lucide-react';
+import { X } from 'lucide-react';
 import NavbarSR from '@/components/Navbar-SR';
-import { ElementaryGothic } from '../fonts';
 import VoltarVesquicio from '@/components/Slow-Risers/Voltar-Vesquicio';
 
 // Tipos
@@ -272,7 +271,7 @@ export default function CharacterGallery() {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className={`text-5xl font-bold text-feisty pb-5 pt-20 ${ElementaryGothic.className}`}>
+          <h2 className={`text-5xl font-bold text-feisty pb-5 pt-20`}>
             Conheça os Slow Risers
           </h2>
         </div>

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { DreamOrphans, Oskon } from "@/app/fonts"
+import { Oskon } from "@/app/fonts"
 
 export default function Capa() {
 

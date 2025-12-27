@@ -1,10 +1,10 @@
-import { DreamOrphans, Oskon } from "@/app/fonts";
+
 
 export default function SobreSR() {
 
     return (
 
-        <div className={`grid grid-cols-2 items-center justify-center h-screen ${DreamOrphans.className}`}>
+        <div className={`grid grid-cols-2 items-center justify-center h-screen`}>
 
         <h2 className="ml-10 text-7xl">Sobre</h2>
 
