@@ -24,6 +24,8 @@ export default function LinksPage() {
           <ul className="flex flex-col text-3xl justify-center items-center gap-2">
             <a href="https://www.youtube.com/@vesquicio" target="blank" className="hover:text-dourado transition">Youtube</a>
             <a href="https://www.instagram.com/vesquicio?igsh=NzJ5MWFqNmZ1czhr" target="blank" className="hover:text-dourado transition">Instagram</a>
+            <a href="https://unvale.io/vesquicioo" target="blank" className="hover:text-dourado transition">Unvale</a>
+            <a href="https://www.tumblr.com/vesquicio" target="blank" className="hover:text-dourado transition">Tumblr</a>
             <a href="https://github.com/Jovicprogrammer" target="blank" className="hover:text-dourado">Github</a>
             {/* <a href="https://x.com/vesquicio" target="blank" className="hover:text-dourado transition">Twitter/X</a> */}
             <a href="https://letterboxd.com/joviczzz/" target="blank" className="hover:text-dourado transition">Letterboxd</a>

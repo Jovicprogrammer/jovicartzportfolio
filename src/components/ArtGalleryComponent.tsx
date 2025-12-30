@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Oskon } from "../app/fonts";
 import Navbar from '@/components/Navbar';
@@ -77,15 +78,15 @@ export default function ArtGalleryComponent() {
     setSelectedIndex((prev) => (prev !== null && prev < artworks.length - 1 ? prev + 1 : 0));
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (selectedIndex === null) return;
-    
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') handlePrevious();
-    if (e.key === 'ArrowRight') handleNext();
-  };
-
   React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedIndex === null) return;
+      
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') handlePrevious();
+      if (e.key === 'ArrowRight') handleNext();
+    };
+
     if (selectedIndex !== null) {
       document.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
@@ -123,10 +124,12 @@ export default function ArtGalleryComponent() {
               onClick={() => openLightbox(index)}
               className="group cursor-pointer relative aspect-square overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
             >
-              <img
+              <Image
                 src={artwork.thumbnail}
                 alt={artwork.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -180,14 +183,19 @@ export default function ArtGalleryComponent() {
 
           {/* Main Image Container */}
           <div
-            className=" relative w-full h-full flex items-center justify-center px-6 pb-32 pt-20"
+            className="relative w-full h-full flex items-center justify-center px-6 pb-32 pt-20"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
-              src={artworks[selectedIndex].full}
-              alt={artworks[selectedIndex].title}
-              className="max-w-full max-h-full object-contain rounded-sm shadow-2xl animate-in zoom-in duration-500"
-            />
+            <div className="relative w-full h-full max-w-5xl max-h-full">
+              <Image
+                src={artworks[selectedIndex].full}
+                alt={artworks[selectedIndex].title}
+                fill
+                sizes="100vw"
+                className="object-contain rounded-sm shadow-2xl animate-in zoom-in duration-500"
+                priority
+              />
+            </div>
           </div>
 
           {/* Thumbnail Navigation Bar */}
@@ -206,11 +214,15 @@ export default function ArtGalleryComponent() {
                       : 'hover:ring-2 hover:ring-white/50 hover:scale-90 opacity-70 hover:opacity-100 cursor-pointer'
                   }`}
                 >
-                  <img
-                    src={artwork.thumbnail}
-                    alt={artwork.title}
-                    className="w-20 h-20 object-cover"
-                  />
+                  <div className="relative w-20 h-20">
+                    <Image
+                      src={artwork.thumbnail}
+                      alt={artwork.title}
+                      fill
+                      sizes="80px"
+                      className="object-cover"
+                    />
+                  </div>
                   {index === selectedIndex && (
                     <div className="absolute inset-0 bg-cafecomleite/50 pointer-events-none"></div>
                   )}

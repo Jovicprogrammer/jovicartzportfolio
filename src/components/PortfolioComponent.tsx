@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
@@ -31,19 +32,19 @@ const products: Product[] = [
   {
     id: 1,
     title: "Gilliard - Edição Comemorativa de 45 anos",
-    thumbnail: "images/gilliard/vinil.png",
+    thumbnail: "/images/gilliard/vinil.png",
     description: "Em comemoração ao aniversário de 45 anos (em 2026) do álbum 'Gilliard', do cantor de sertanejo e brega de mesmo nome, me desafiei a criar uma identidade visual que celebra esse álbum numa roupagem mais moderna. Seria como uma campanha onde uma versão comemorativa e remasterizada do disco seria lançada, junto com diversos produtos inspirados no álbum. ",
     images: [
-      "images/gilliard/capa.png",
-      "images/gilliard/contracapa.png",
-      "images/gilliard/logo.png",
-      "images/gilliard/poster.png",
-      "images/gilliard/vinil.png",
-      "images/gilliard/camisa.png",
-      "images/gilliard/hoodie.png",
-      "images/gilliard/caneca.png",
-      "images/gilliard/caderno.png",
-      "images/gilliard/banner.png"
+      "/images/gilliard/capa.png",
+      "/images/gilliard/contracapa.png",
+      "/images/gilliard/logo.png",
+      "/images/gilliard/poster.png",
+      "/images/gilliard/vinil.png",
+      "/images/gilliard/camisa.png",
+      "/images/gilliard/hoodie.png",
+      "/images/gilliard/caneca.png",
+      "/images/gilliard/caderno.png",
+      "/images/gilliard/banner.png"
     ],
     infos:[
       "1. capa",
@@ -61,30 +62,30 @@ const products: Product[] = [
   {
     id: 2,
     title: "Caderno Be Berry",
-    thumbnail: "images/vesquicio-quadro.webp",
+    thumbnail: "/images/vesquicio-quadro.webp",
     description: "Caderno universitário 10 matérias com capa dura decorada, bolsa plástica com aroma de morango e 160 folhas.",
     images: [
-      "images/vesquicio-quadro.webp",
+      "/images/vesquicio-quadro.webp",
     ],
     infos:[],
   },
   {
     id: 3,
     title: "Action Figure Hero",
-    thumbnail: "images/vesquicio-quadro.webp",
+    thumbnail: "/images/vesquicio-quadro.webp",
     description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
     images: [
-      "images/vesquicio-quadro.webp",
+      "/images/vesquicio-quadro.webp",
     ],
     infos:[],
   },
   {
     id: 4,
     title: "Strangers on a Train - 2 pack",
-    thumbnail: "images/vesquicio-quadro.webp",
+    thumbnail: "/images/vesquicio-quadro.webp",
     description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
     images: [
-      "images/vesquicio-quadro.webp",
+      "/images/vesquicio-quadro.webp",
     ],
     infos:[],
   },
@@ -97,10 +98,12 @@ function ProjectCard({ product, onClick }: ProductCardProps) {
       className="bg-dourado rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2 group"
     >
       <div className="relative overflow-hidden aspect-square">
-        <img
+        <Image
           src={product.thumbnail}
           alt={product.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
           <ZoomIn className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -154,10 +157,12 @@ function ProductModal({ product, onClose }: ProductModalProps) {
             <div>
               {/* Imagem Principal */}
               <div className="relative aspect-square mb-4 bg-gray-100 rounded-lg overflow-hidden group">
-                <img
+                <Image
                   src={product.images[selectedImage]}
                   alt={`${product.title} - imagem ${selectedImage + 1}`}
-                  className="w-full h-full object-cover cursor-zoom-in"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover cursor-zoom-in"
                   onClick={() => setZoomedImage(product.images[selectedImage])}
                 />
                 
@@ -194,17 +199,19 @@ function ProductModal({ product, onClose }: ProductModalProps) {
                   <button
                     key={idx}
                     onClick={() => setSelectedImage(idx)}
-                    className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
+                    className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
                       selectedImage === idx
                         ? 'border-amber-200 scale-105'
                         : 'border-gray-200 hover:border-dourado'
                     }`}
                     aria-label={`Ver imagem ${idx + 1}`}
                   >
-                    <img
+                    <Image
                       src={img}
                       alt={`Miniatura ${idx + 1}`}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 768px) 25vw, 12vw"
+                      className="object-cover"
                     />
                   </button>
                 ))}
@@ -219,17 +226,15 @@ function ProductModal({ product, onClose }: ProductModalProps) {
                 </p>
               </div>
 
-
               {/* listagem */}
-        <div className="mt-6 pt-6 border-t border-gray-200">
-          <h3 className="font-bold text-black mb-3">Conteúdo</h3>
-          <ul className="space-y-2 text-white/80">
-            {product.infos.map((info, index) => (
-            <li key={index}>✓ {info}</li>
-            ))}
-          </ul>
-        </div>
-
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h3 className="font-bold text-black mb-3">Conteúdo</h3>
+                <ul className="space-y-2 text-white/80">
+                  {product.infos.map((info, index) => (
+                    <li key={index}>✓ {info}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -248,11 +253,15 @@ function ProductModal({ product, onClose }: ProductModalProps) {
           >
             <X className="w-8 h-8" />
           </button>
-          <img
-            src={zoomedImage}
-            alt="Imagem ampliada"
-            className="max-w-full max-h-full object-contain animate-scaleIn"
-          />
+          <div className="relative w-full h-full max-w-7xl max-h-[90vh]">
+            <Image
+              src={zoomedImage}
+              alt="Imagem ampliada"
+              fill
+              sizes="100vw"
+              className="object-contain animate-scaleIn"
+            />
+          </div>
         </div>
       )}
 
@@ -289,7 +298,7 @@ export default function PortfolioComponent() {
           meu portfolio.
         </h1>
         <p className="text-leitebranco text-center text-2xl mb-8">
-        Alguns projetos de identidade visual que produzi.
+          Alguns projetos de identidade visual que produzi.
         </p>
 
         {/* Grid de Cards */}
@@ -303,10 +312,9 @@ export default function PortfolioComponent() {
           ))}
         </div>
 
-          <div>
-            <Footer />
-          </div>
-        
+        <div>
+          <Footer />
+        </div>
       </div>
 
       {/* Modal */}
@@ -316,8 +324,6 @@ export default function PortfolioComponent() {
           onClose={() => setSelectedProduct(null)}
         />
       )}
-
-      
     </div>
   );
 }

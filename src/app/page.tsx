@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import Navbar from "@/components/Navbar"
 import Capa from "@/components/pagina-home/Capa"
 import Sobre from "@/components/pagina-home/Sobre"
@@ -6,7 +6,7 @@ import HookPortfolio from "@/components/pagina-home/Hook-Portfolio"
 import Playlist from "@/components/pagina-home/Playlist"
 import Footer from "@/components/Footer"
 import HomeNav from "@/components/pagina-home/home-nav"
-import FloatingMusicPlayer from "@/components/MusicPlayer"
+
 
 export default function Home() {
 
