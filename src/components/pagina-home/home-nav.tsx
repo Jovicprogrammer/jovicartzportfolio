@@ -9,7 +9,7 @@ export default function HomeNav() {
             <div className={`flex flex-col gap-6 items-center justify-center h-auto ${Oskon.className}`}>
                 <a href="#topo" className="hover:underline transition">Topo</a>
                 <a href="#sobre" className="hover:underline transition">Sobre</a>
-                <a href="#hook-portfolio" className="hover:underline transition  ">veja meu portfolio!</a>
+                <a href="#hook-portfolio" className="hover:underline transition  ">veja meus designs!</a>
                 <a href="#playlist" className="hover:underline transition">Playlist</a>
             </div>
         </nav>
