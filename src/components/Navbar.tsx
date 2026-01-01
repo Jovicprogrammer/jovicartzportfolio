@@ -12,7 +12,7 @@ export default function Navbar() {
                 <Link href="/" className="hover:underline transition ml-20">Home</Link>
                 <Link href="/Links" className="hover:underline transition mr-20">Links</Link>
                 <Image className="absolute w-27 hover:animate-spin" src="/images/vesquicioprint.webp" alt="sd" width={500} height={500} ></Image>
-                <Link href="/Portfolio" className="hover:underline transition ml-25">Portfolio</Link>
+                <Link href="/Designs" className="hover:underline transition ml-25">Designs</Link>
                 <Link href="/Galeria" className="hover:underline transition">Galeria de Artes</Link>
                 
             </div>

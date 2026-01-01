@@ -295,7 +295,7 @@ export default function PortfolioComponent() {
 
       <div className="max-w-7xl mx-auto px-6 pt-20">
         <h1 className="text-6xl text-leitebranco mb-2 text-center">
-          meu portfolio.
+          meus designs.
         </h1>
         <p className="text-leitebranco text-center text-2xl mb-8">
           Alguns projetos de identidade visual que produzi.

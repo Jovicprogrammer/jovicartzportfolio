@@ -2,17 +2,16 @@ import PortfolioComponent from "@/components/PortfolioComponent";
 import { Metadata } from "next";
 
   export const metadata: Metadata = {
-    title: "portfólio de vesquicio.",
-    description: "Página com links importantes (e outros nem tanto)",
+    title: "designs de vesquicio.",
+    description: "Página exibindo alguns projetos de identidade visual",
   };
 
-export default function Footer() {
+export default function Designs() {
 
     return (
 
         <div>
 
-        
         <PortfolioComponent/>
 
         </div>
