@@ -18,9 +18,9 @@ interface Artwork {
 const artworks: Artwork[] = [
   {
     id: 1,
-    title: "Abstrato em Azul",
-    thumbnail: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1200&h=1200&fit=crop"
+    title: "Boots",
+    thumbnail: "/images/galeria/boots.png",
+    full: "/images/galeria/boots.png"
   },
   {
     id: 2,
