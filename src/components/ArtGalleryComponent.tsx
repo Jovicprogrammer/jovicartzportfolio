@@ -24,34 +24,53 @@ const artworks: Artwork[] = [
   },
   {
     id: 2,
-    title: "Reflexões Urbanas",
-    thumbnail: "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=1200&h=1200&fit=crop"
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
   },
   {
     id: 3,
-    title: "Natureza Vibrante",
-    thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1200&h=1200&fit=crop"
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
   },
   {
     id: 4,
-    title: "Geometria Moderna",
-    thumbnail: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&h=1200&fit=crop"
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
   },
   {
     id: 5,
-    title: "Cores do Pôr do Sol",
-    thumbnail: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=1200&fit=crop"
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
   },
   {
     id: 6,
-    title: "Expressão Líquida",
-    thumbnail: "https://images.unsplash.com/photo-1549887534-1541e9326642?w=400&h=400&fit=crop",
-    full: "https://images.unsplash.com/photo-1549887534-1541e9326642?w=1200&h=1200&fit=crop"
-  }
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
+  },
+  {
+    id: 7,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
+  },
+  {
+    id: 8,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
+  },
+  {
+    id: 9,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    full: "/images/vesquicio-quadro.webp"
+  },
+
 ];
 
 
