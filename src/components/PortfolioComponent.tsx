@@ -61,9 +61,9 @@ const products: Product[] = [
   },
   {
     id: 2,
-    title: "Caderno Be Berry",
+    title: "TBA",
     thumbnail: "/images/vesquicio-quadro.webp",
-    description: "Caderno universitário 10 matérias com capa dura decorada, bolsa plástica com aroma de morango e 160 folhas.",
+    description: "TBA",
     images: [
       "/images/vesquicio-quadro.webp",
     ],
@@ -71,9 +71,9 @@ const products: Product[] = [
   },
   {
     id: 3,
-    title: "Action Figure Hero",
+    title: "TBA",
     thumbnail: "/images/vesquicio-quadro.webp",
-    description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
+    description: "TBA",
     images: [
       "/images/vesquicio-quadro.webp",
     ],
@@ -81,9 +81,59 @@ const products: Product[] = [
   },
   {
     id: 4,
-    title: "Strangers on a Train - 2 pack",
+    title: "TBA",
     thumbnail: "/images/vesquicio-quadro.webp",
-    description: "Action figure articulado com acessórios e detalhes premium. Edição limitada para colecionadores.",
+    description: "TBA",
+    images: [
+      "/images/vesquicio-quadro.webp",
+    ],
+    infos:[],
+  },
+  {
+    id: 5,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    description: "TBA",
+    images: [
+      "/images/vesquicio-quadro.webp",
+    ],
+    infos:[],
+  },
+  {
+    id: 6,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    description: "TBA",
+    images: [
+      "/images/vesquicio-quadro.webp",
+    ],
+    infos:[],
+  },
+  {
+    id: 7,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    description: "TBA",
+    images: [
+      "/images/vesquicio-quadro.webp",
+    ],
+    infos:[],
+  },
+  {
+    id: 8,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    description: "TBA",
+    images: [
+      "/images/vesquicio-quadro.webp",
+    ],
+    infos:[],
+  },
+  {
+    id: 9,
+    title: "TBA",
+    thumbnail: "/images/vesquicio-quadro.webp",
+    description: "TBA",
     images: [
       "/images/vesquicio-quadro.webp",
     ],
