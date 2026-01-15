@@ -339,7 +339,7 @@ export default function PortfolioComponent() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <div className={`min-h-screen bg-cafecomleite p-15 ${Oskon.className}`}>
+    <div className={`min-h-screen bg-cafecomleite p-5 md:p-15 pt-15  ${Oskon.className}`}>
 
       <Navbar />
 
