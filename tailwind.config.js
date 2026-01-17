@@ -1,7 +1,5 @@
 // tailwind.config.js
 
-import { DreamOrphans, ElementaryGothic, Oskon } from "@/app/fonts";
-
 const config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",       // ajuste esses caminhos pro seu projeto!
