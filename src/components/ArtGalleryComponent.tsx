@@ -24,9 +24,9 @@ const artworks: Artwork[] = [
   },
   {
     id: 2,
-    title: "TBA",
-    thumbnail: "/images/vesquicio-quadro.webp",
-    full: "/images/vesquicio-quadro.webp"
+    title: "Barbie em A Metamorfose",
+    thumbnail: "/images/galeria/barbie.jpg",
+    full: "/images/galeria/barbie.jpg"
   },
   {
     id: 3,
