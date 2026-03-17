@@ -15,6 +15,11 @@ export default function Navbar() {
                 <Link href="/Designs" className="hover:underline transition md:ml-25">Designs</Link>
                 <Link href="/Galeria" className="hover:underline transition">Galeria de Artes</Link>
                 
+                <Link href="https://slow-risers.vercel.app/" target="blank" className="hover:underline transition">
+                
+                <Image className="hidden md:block absolute top-1 w-32 hover:rotate-5 transition" src="/images/SlowRisersLogo.webp" alt="sd" width={500} height={500} ></Image>
+                
+                </Link>
             </div>
         </nav>
 
