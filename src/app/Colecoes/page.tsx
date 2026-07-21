@@ -6,7 +6,7 @@ import { Metadata } from "next";
     description: "Página exibindo alguns projetos de identidade visual",
   };
 
-export default function Designs() {
+export default function Colecoes() {
 
     return (
 
