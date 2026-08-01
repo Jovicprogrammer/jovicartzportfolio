@@ -30,27 +30,27 @@ const artworks: Artwork[] = [
   },
   {
     id: 3,
-    title: "TBA",
-    thumbnail: "/images/vesquicio-quadro.webp",
-    full: "/images/vesquicio-quadro.webp"
+    title: "Bobby de Backrooms (2026)",
+    thumbnail: "/images/galeria/BobbyBackrooms.jpeg",
+    full: "/images/galeria/BobbyBackrooms.jpeg"
   },
   {
     id: 4,
-    title: "TBA",
-    thumbnail: "/images/vesquicio-quadro.webp",
-    full: "/images/vesquicio-quadro.webp"
+    title: "Speed Racer (2008)",
+    thumbnail: "/images/galeria/SpeedRacer.jpeg",
+    full: "/images/galeria/SpeedRacer.jpeg"
   },
   {
     id: 5,
-    title: "TBA",
-    thumbnail: "/images/vesquicio-quadro.webp",
-    full: "/images/vesquicio-quadro.webp"
+    title: "Fili E Kili (O Hobbit)",
+    thumbnail: "/images/galeria/FiliEKili.jpeg",
+    full: "/images/galeria/FiliEKili.jpeg"
   },
   {
     id: 6,
-    title: "TBA",
-    thumbnail: "/images/vesquicio-quadro.webp",
-    full: "/images/vesquicio-quadro.webp"
+    title: "Leviticus",
+    thumbnail: "/images/galeria/Leviticus.jpeg",
+    full: "/images/galeria/Leviticus.jpeg"
   },
   {
     id: 7,
