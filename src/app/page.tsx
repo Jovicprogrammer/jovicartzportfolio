@@ -1,11 +1,10 @@
 
 import Navbar from "@/components/Navbar"
 import Capa from "@/components/pagina-home/Capa"
-import Sobre from "@/components/pagina-home/Sobre"
-import HookPortfolio from "@/components/pagina-home/Hook-Portfolio"
-import Playlist from "@/components/pagina-home/Playlist"
+// import Sobre from "@/components/pagina-home/Sobre"
+// import Playlist from "@/components/pagina-home/Playlist"
 import Footer from "@/components/Footer"
-import HomeNav from "@/components/pagina-home/home-nav"
+// import HomeNav from "@/components/pagina-home/home-nav"
 
 
 export default function Home() {
@@ -20,21 +19,9 @@ export default function Home() {
             <Capa />
         </div>
 
-        <div id="sobre">
-            <Sobre />
-        </div>
-
-        <div id="hook-portfolio">
-            <HookPortfolio />
-        </div>
-
-        <div id="playlist">
-            <Playlist />
-        </div>
-
-        <div>
+        {/* <div>
             <HomeNav />
-        </div>
+        </div> */}
 
         <div>
             <Footer />
