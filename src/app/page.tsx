@@ -19,10 +19,6 @@ export default function Home() {
             <Capa />
         </div>
 
-        {/* <div>
-            <HomeNav />
-        </div> */}
-
         <div>
             <Footer />
         </div>
